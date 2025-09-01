@@ -4,6 +4,38 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-bg: #0099CC;
+    /*tło*/
+    --color-accent: #006699;
+    /*przyciski*/
+    --color-contrast: #FFAA00;
+    /*CTA, Kup Bilet*/
+    --color-bg-light: #F5F9FC;
+    /*tło jasne*/
+    --color-text: #222222;
+    /*tekst*/
+}
+
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--color-bg-light);
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-accent);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
