@@ -11,7 +11,7 @@ nav ul {
     list-style: none;
     display: flex;
     padding: 0.8rem 0;
-    justify-content: right;
+    justify-content: flex-end;
     gap: 1.5rem;
 }
 
@@ -19,14 +19,23 @@ nav ul li a {
     color: var(--color-bg-light);
     text-decoration: none;
     font-weight: 500;
+    animation: fade-InUp 1.5s ease;
+    transition: all 0.5s ease;
 }
 
 nav ul li a:hover {
     color: var(--color-contrast);
+    transform: translateY(-2px);
 }
 
-.header-container {
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+header .container h1 {
+    color: var(--color-bg-light);
+    animation: fade-InUp 1.2s ease;
+    transition: all 0.5s ease;
 }

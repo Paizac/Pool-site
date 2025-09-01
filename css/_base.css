@@ -41,3 +41,14 @@ h3 {
     margin: 0 auto;
     padding: 0 1rem;
 }
+
+@keyframes fade-InUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
