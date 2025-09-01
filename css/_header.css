@@ -1,0 +1,32 @@
+header {
+    background-color: var(--color-bg);
+    padding: 1rem 0;
+    position: sticky;
+    border-bottom: 0.5rem solid var(--color-contrast);
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0.8rem 0;
+    justify-content: right;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: var(--color-bg-light);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: var(--color-contrast);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
