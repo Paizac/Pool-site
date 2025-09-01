@@ -19,8 +19,19 @@ nav ul li a {
     color: var(--color-bg-light);
     text-decoration: none;
     font-weight: 500;
-    animation: fade-InUp 1.5s ease;
+}
+
+nav ul li {
+    animation: fade-InUp 1.2s ease;
     transition: all 0.5s ease;
+}
+
+nav ul li:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+nav ul li:nth-child(2) {
+    animation-delay: 0.8s;
 }
 
 nav ul li a:hover {
