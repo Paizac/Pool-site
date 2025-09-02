@@ -1,5 +1,5 @@
 header {
-    background-color: var(--color-bg);
+    background-image: linear-gradient(to bottom, #0099CC, #0088BB);
     padding: 1rem 0;
     position: sticky;
     border-bottom: 0.5rem solid var(--color-contrast);
@@ -20,6 +20,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: 500;
     transition: all 0.5s ease;
+    position: relative;
 }
 
 nav ul li {
@@ -59,4 +60,25 @@ header .container h1 {
     animation: fade-InUp 0.8s ease forwards;
     transition: all 0.5s ease;
     opacity: 0;
+}
+
+nav ul li a::after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--color-contrast);
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+@media (maxwidth: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
