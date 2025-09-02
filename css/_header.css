@@ -63,6 +63,7 @@ header .container h1 {
 }
 
 nav ul li a::after {
+    content: "";
     position: absolute;
     bottom: -5px;
     left: 0;
@@ -85,13 +86,22 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 768px) {
-    nav {
+    header .container nav {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
+        background-color: var(--color-bg);
         transform: translateX(-100%);
         transition: transform 0.3s ease-in-out;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    .hamburger-btn {
+        display: block;
     }
     input[type="checkbox"]:checked~.container nav {
         transform: translateX(0);
