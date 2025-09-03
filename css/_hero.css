@@ -33,8 +33,11 @@
     font-size: 1rem;
     border: none;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s, ease color 0.2s ease;
     cursor: pointer;
+    animation: fade-InUp 1s ease forwards;
+    animation-delay: 1.4s;
+    opacity: 0;
 }
 
 .btn:hover {
@@ -55,9 +58,15 @@
     font-size: 3rem;
     font-weight: 700;
     text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4), 2px 4px 16px rgba(0, 0, 0, 0.8);
+    animation: fade-InUp 1s ease forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
 }
 
 .hero p {
     font-size: 1.2rem;
     max-width: 60ch;
+    animation: fade-InUp 1s ease forwards;
+    animation-delay: 1.2s;
+    opacity: 0;
 }
