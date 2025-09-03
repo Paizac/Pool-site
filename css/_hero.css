@@ -1,11 +1,11 @@
 .hero {
     display: flex;
     height: 90vh;
-    background-image: url(../img/pool.jpg);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
     color: var(--color-bg-light);
+    position: relative;
+    text-align: center;
 }
 
 .hero::before {
@@ -15,22 +15,44 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pool.jpg);
+    background-size: cover;
+    background-position: center;
     z-index: -1;
 }
 
 .btn {
     display: inline-block;
     background-color: var(--color-contrast);
-    padding: 2rem;
-    border-radius: 0.5rem;
-    font-size: 1.5rem;
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
     border: none;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    transition: all 0.5s ease;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: var(--color-accent);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 60ch;
 }
