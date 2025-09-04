@@ -1,6 +1,13 @@
 .pool-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.pool-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .pool-card {
@@ -9,4 +16,23 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.pool-card:hover img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: var(--color-text);
 }
