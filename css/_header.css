@@ -44,6 +44,10 @@ nav ul li:nth-child(4) {
     animation-delay: 0.5s;
 }
 
+nav ul li:nth-child(5) {
+    animation-delay: 0.6s;
+}
+
 nav ul li a:hover {
     color: var(--color-contrast);
     transform: translateY(-2px);
