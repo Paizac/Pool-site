@@ -2,11 +2,17 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    margin-top: 40px;
+}
+
+.pools-section {
+    padding: 40px 0;
+    text-align: center;
 }
 
 .pool-card img {
     width: 100%;
-    height: 200px;
+    aspect-ratio: 16/9;
     object-fit: cover;
 }
 
@@ -15,12 +21,17 @@
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .pool-card:hover img {
     transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .card-content {
@@ -30,9 +41,10 @@
 .card-content h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color: var(--color-accent);
 }
 
 .card-content p {
     font-size: 1rem;
-    color: var(--color-text);
+    color: #666;
 }
