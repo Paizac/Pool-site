@@ -23,7 +23,7 @@
 }
 
 .ticket-form input[type="checkbox"]+label::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 50%;
@@ -32,18 +32,18 @@
     height: 20px;
     border: 2px solid var(--color-accent);
     border-radius: 4px;
-    transform: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
-.ticket-form input[type="checkbox"]:checked+label::before {
-    content: "✔";
+.ticket-form input[type="checkbox"]+label::after {
+    content: '✔';
     position: absolute;
     left: 4px;
     top: 50%;
     transform: translateY(-50%) scale(0);
     font-size: 16px;
     color: var(--color-bg-light);
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
 .ticket-form input[type="checkbox"]:checked+label::before {
