@@ -70,45 +70,47 @@
         </section>
 
         <section id="price" class="price-section">
-            <h2>Choose a ticket</h2>
-            <fieldset>
-                <legend>Ticket type</legend>
-                <label>
+            <form class="ticket-form">
+                <h2>Choose a ticket</h2>
+                <fieldset>
+                    <legend>Ticket type</legend>
+                    <label>
                     <input type="radio" name="ticket-type" value="adult">
                     Adult
                 </label>
-                <label>
+                    <label>
                     <input type="radio" name="ticket-type" value="student">
                     Student
                 </label>
-                <label>
+                    <label>
                     <input type="radio" name="ticket-type" value="child">
                     Child
                 </label>
-            </fieldset>
-            <fieldset>
-                <legend>Additional services</legend>
-                <label>
-                    <input type="checkbox" name="additional-services" value="swimming-pool">
+                </fieldset>
+                <fieldset>
+                    <legend>Additional services</legend>
+                    <label>
+                    <input type="checkbox" name="additional-services" value="cupboard">
                     Cupboard
                 </label>
-                <label>
-                    <input type="checkbox" name="additional-services" value="swimming-pool">
+                    <label>
+                    <input type="checkbox" name="additional-services" value="towel">
                     Towel
                 </label>
-                <label>
-                    <input type="checkbox" name="additional-services" value="swimming-pool">
+                    <label>
+                    <input type="checkbox" name="additional-services" value="sauna">
                     Sauna
                 </label>
-            </fieldset>
-            <fieldset>
-                <legend>Choose a date</legend>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date">
-                <label for="quantity">Quantity of people:</label>
-                <input type="number" id="quantity" name="quantity" min="1" value="1">
-            </fieldset>
-            <button type="submit">Submit</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Choose a date</legend>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                    <label for="quantity">Quantity of people:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
         </section>
 
     </main>

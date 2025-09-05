@@ -1,8 +1,7 @@
 .price-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .price-section fieldset label {
@@ -11,9 +10,47 @@
     margin-bottom: 10px;
 }
 
-.price-section input {
+.price-section input[type="radio"],
+.price-section input[type="checkbox"] {
     opacity: 0;
     position: absolute;
 }
 
-.price-section label {}
+.ticket-form label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.ticket-form input[type="checkbox"]+label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-accent);
+    border-radius: 4px;
+    transform: all 0.3s ease;
+}
+
+.ticket-form input[type="checkbox"]:checked+label::before {
+    content: "✔";
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    font-size: 16px;
+    color: var(--color-bg-light);
+    transition: transform 0.3s ease;
+}
+
+.ticket-form input[type="checkbox"]:checked+label::before {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.ticket-form input[type="checkbox"]:checked+label::after {
+    transform: translateY(-50%) scale(1);
+}
