@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    padding: 4px 0;
+    padding: 4rem 0;
 }
 
 .price-section fieldset label {
@@ -84,12 +84,12 @@
 }
 
 .ticket-form input[type="radio"]:checked+label::before {
-    background-color: var(--color-accent);
-    border-color: var(--color-accent);
+    border-width: 6px;
 }
 
 .ticket-form input[type="radio"]:checked+label::after {
     transform: translateY(-50%) scale(1);
+    background-color: var(--color-accent);
 }
 
 .ticket-form {
@@ -110,7 +110,7 @@
 
 .ticket-form legend {
     font-weight: 600;
-    font-weight: bold;
+    font: bold;
     color: var(--color-accent);
 }
 
@@ -120,6 +120,14 @@
     border: 1px solid var(--color-contrast);
     border-radius: 5px;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ticket-form input[type="date"]:focus,
+.ticket-form input[type="number"]:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(0, 102, 153, 0.2);
 }
 
 .ticket-form button[type="submit"] {
@@ -128,4 +136,10 @@
     width: 100%;
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex: 1;
 }
