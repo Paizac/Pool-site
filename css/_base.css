@@ -81,3 +81,9 @@ h3 {
         opacity: 1;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+}
