@@ -78,18 +78,18 @@
 .ticket-form input[type="radio"]+label::after {
     content: '';
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 12px;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: var(--color-accent);
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 .ticket-form input[type="radio"]:checked+label::after {
-    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .ticket-form {
