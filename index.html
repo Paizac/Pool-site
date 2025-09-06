@@ -74,28 +74,28 @@
                 <h2>Choose a ticket</h2>
                 <fieldset>
                     <legend>Ticket type</legend>
-                    <input type="radio" name="ticket-type" value="adult">
-                    <label>Adult</label>
-                    <input type="radio" name="ticket-type" value="student">
-                    <label>Student</label>
-                    <input type="radio" name="ticket-type" value="child">
-                    <label>Child</label>
+                    <input type="radio" name="ticket-type" value="adult" id="adult-radio">
+                    <label for="adult-radio">Adult</label>
+                    <input type="radio" name="ticket-type" value="student" id="student-radio">
+                    <label for="student-radio">Student</label>
+                    <input type="radio" name="ticket-type" value="child" id="child-radio">
+                    <label for="child-radio">Child</label>
                 </fieldset>
                 <fieldset>
                     <legend>Additional services</legend>
-                    <input type="checkbox" name="additional-services" value="cupboard">
-                    <label>Cupboard</label>
-                    <input type="checkbox" name="additional-services" value="towel">
-                    <label>Towel</label>
-                    <input type="checkbox" name="additional-services" value="sauna">
-                    <label>Sauna</label>
+                    <input type="checkbox" name="additional-services" value="cupboard" id="cupboard-check">
+                    <label for="cupboard-check">Cupboard</label>
+                    <input type="checkbox" name="additional-services" value="towel" id="towel-check">
+                    <label for="towel-check">Towel</label>
+                    <input type="checkbox" name="additional-services" value="sauna" id="sauna-check">
+                    <label for="sauna-check">Sauna</label>
                 </fieldset>
                 <fieldset>
                     <legend>Choose a date</legend>
-                    <input type="date" id="date" name="date">
                     <label for="date">Date:</label>
-                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    <input type="date" id="date" name="date">
                     <label for="quantity">Quantity of people:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
                 </fieldset>
                 <button type="submit">Submit</button>
             </form>
