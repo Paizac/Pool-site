@@ -1,9 +1,14 @@
 .price-section {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 2rem;
     align-items: center;
     padding: 4rem 0;
+}
+
+.price-section h2 {
+    font-size: 700;
+    margin-bottom: 1rem;
 }
 
 .price-section fieldset label {
@@ -79,7 +84,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: var(--color-bg-light);
+    background-color: var(--color-accent);
     transition: transform 0.2s ease;
 }
 
@@ -88,12 +93,12 @@
 }
 
 .ticket-form input[type="radio"]:checked+label::after {
-    background-color: var(--color-accent);
+    transform: translateZ(-5px)
 }
 
 .ticket-form {
     background-color: var(--color-bg-light);
-    padding: 20px;
+    padding: 2.5rem;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -103,13 +108,19 @@
 
 .ticket-form fieldset {
     border: none;
-    margin-bottom: 20px;
-    border-bottom: 1px solid var(--color-contrast);
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
 }
 
 .ticket-form legend {
     font-weight: 600;
     color: var(--color-accent);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
 }
 
 .ticket-form input[type="date"],
@@ -119,6 +130,8 @@
     margin-bottom: 10px;
     border: 1px solid #ccc;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    font-size: 16px;
 }
 
 .ticket-form input[type="date"]:focus,
@@ -133,6 +146,8 @@
     width: 100%;
     font-size: 1.2rem;
     font-weight: 700;
+    border-radius: 50px;
+    margin-top: 20px;
 }
 
 .form-row {
