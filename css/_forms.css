@@ -1,4 +1,4 @@
-.price-section {
+.services-section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -6,19 +6,19 @@
     padding: 4rem 0;
 }
 
-.price-section h2 {
+.services-section h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.price-section fieldset label {
+.services-section fieldset label {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.price-section input[type="radio"],
-.price-section input[type="checkbox"] {
+.services-section input[type="radio"],
+.services-section input[type="checkbox"] {
     opacity: 0;
     position: absolute;
 }
