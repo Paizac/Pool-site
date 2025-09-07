@@ -1,0 +1,25 @@
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.price-table th,
+.price-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.price-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.price-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.price-table tbody tr {
+    border-bottom: 1 solid #eee;
+}
