@@ -4,10 +4,21 @@
     margin: 20px 0;
 }
 
+.price-table h2 {
+    text-align: center;
+}
+
 .price-table th,
 .price-table td {
-    padding: 10px;
-    text-align: center;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.price-table th:nth-child(2),
+.price-table td:nth-child(2),
+.price-table th:nth-child(3),
+.price-table td:nth-child(3) {
+    text-align: right;
 }
 
 .price-table th {
@@ -19,10 +30,6 @@
 
 .price-table tbody td:first-child {
     font-weight: bold;
-}
-
-.price-table tbody tr:nth-child(even) {
-    background-color: #f8f9fa;
 }
 
 .price-table tbody tr {
