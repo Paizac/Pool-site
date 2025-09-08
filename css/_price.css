@@ -8,11 +8,16 @@
 .price-table td {
     padding: 10px;
     text-align: center;
-    border: 1px solid #ccc;
 }
 
 .price-table th {
-    background-color: #f8f9fa;
+    background-color: var(--color-bg-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-accent);
+}
+
+.price-table tbody td:first-child {
     font-weight: bold;
 }
 
@@ -21,5 +26,15 @@
 }
 
 .price-table tbody tr {
-    border-bottom: 1 solid #eee;
+    border-bottom: 1px solid var(--color-accent);
+    transition: background-color 0.2s ease;
+}
+
+.table-wrapper {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.price-table tbody tr:hover {
+    background-color: #f1f1f1;
 }
