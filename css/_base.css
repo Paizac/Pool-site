@@ -87,3 +87,21 @@ h3 {
         padding: 0 1rem;
     }
 }
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(50px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
