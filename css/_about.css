@@ -18,19 +18,21 @@
 
 .about-image {
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: slideInFromLeft 1s ease forwards;
+    opacity: 0;
+}
+
+.about-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    animation: slideInFromLeft 1s ease forwards;
-    opacity: 0;
-    animation-fill-mode: forwards;
+    display: block;
 }
 
 .about-text {
     animation: slideInFromRight 1s ease forwards;
     opacity: 0;
-    animation-fill-mode: forwards;
 }
 
 .about-text h3 {
