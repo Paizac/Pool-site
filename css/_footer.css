@@ -1,0 +1,21 @@
+.footer {
+    background-color: var(--color-accent);
+    color: var(--color-bg-light);
+    padding: 4rem 0 0 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-nav ul,
+.footer-social ul {
+    list-style: none;
+}
+
+.footer a {
+    color: var(--color-bg-light);
+    text-decoration: none;
+}
