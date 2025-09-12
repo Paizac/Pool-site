@@ -16,6 +16,25 @@
 }
 
 .footer a {
-    color: var(--color-bg-light);
+    color: inherit;
     text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.footer a:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
