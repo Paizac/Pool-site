@@ -8,16 +8,13 @@ footer {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-}
-
-.footer-nav,
-.footer-social {
-    padding-left: 0;
+    padding-bottom: 2rem;
 }
 
 .footer-nav ul,
 .footer-social ul {
     list-style: none;
+    padding-left: 0;
 }
 
 .footer li {
@@ -53,4 +50,10 @@ footer {
         gap: 2rem;
         text-align: center;
     }
+}
+
+.footer-nav li,
+.footer-social li {
+    color: var(--color-bg-light);
+    margin-bottom: 0.8rem;
 }
