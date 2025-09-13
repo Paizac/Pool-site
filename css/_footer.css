@@ -1,4 +1,4 @@
-.footer {
+footer {
     background-color: var(--color-accent);
     color: var(--color-bg-light);
     padding: 4rem 0 0 0;
@@ -15,6 +15,16 @@
     list-style: none;
 }
 
+.footer li {
+    margin-bottom: 0.8rem;
+}
+
+.footer h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
 .footer a {
     color: inherit;
     text-decoration: none;
@@ -22,7 +32,7 @@
 }
 
 .footer a:hover {
-    color: var(--color-text);
+    color: var(--color-contrast);
     text-decoration: underline;
 }
 
@@ -36,5 +46,6 @@
     .footer-content {
         flex-direction: column;
         gap: 2rem;
+        text-align: center;
     }
 }
