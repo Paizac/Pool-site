@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--color-accent);
+    background: linear-gradient(180deg, var(--color-accent) 0%, #005f8a 100%);
     color: var(--color-bg-light);
     padding: 4rem 0 0 0;
 }
@@ -22,8 +22,10 @@ footer {
 }
 
 .footer h4 {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     margin-bottom: 1rem;
 }
 
@@ -51,6 +53,14 @@ footer {
         gap: 2rem;
         text-align: center;
     }
+    .footer li {
+        margin-bottom: 1rem;
+    }
+}
+
+.footer-social a i {
+    margin-right: 8px;
+    color: var(--color-text);
 }
 
 .footer-nav li,
